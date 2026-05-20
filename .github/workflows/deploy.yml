@@ -7,11 +7,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-        # GitHub에서 만든 checkout 액션의 4번째 릴리즈.
+        uses: actions/checkout@v3
+        # GitHub에서 만든 checkout 액션의 3번째 릴리즈. v3 유지 필요.
 
       - name: Copy k8s manifests to EC2
         uses: appleboy/scp-action@v0.1.7
