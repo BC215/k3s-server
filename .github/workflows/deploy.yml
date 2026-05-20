@@ -10,8 +10,8 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3 
-        # GitHub에서 만든 checkout 액션의 3번째 릴리즈. 못바꿈 v3 여야 함
+        uses: actions/checkout@v4
+        # GitHub에서 만든 checkout 액션의 4번째 릴리즈.
 
       - name: Copy k8s manifests to EC2
         uses: appleboy/scp-action@v0.1.7
