@@ -32,6 +32,6 @@ jobs:
             sudo kubectl apply -f ~/k8s/deployment.yml
             sudo kubectl apply -f ~/k8s/service.yml
             sudo kubectl rollout status deployment/nginx-deployment
-	            # deployment/nginx-deployment 에서 
-	            # 'deployment' 는 deployment.yml 파일에서의 kind(리소스 타입)
-	            # 'nginx-deployment' 는 name 임.
+          # deployment/nginx-deployment 에서
+          # 'deployment' 는 deployment.yml 파일에서의 kind(리소스 타입)
+          # 'nginx-deployment' 는 name 임.
